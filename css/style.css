@@ -172,6 +172,7 @@ button:focus {
   padding: 0px;
   border: 0px;
   border-radius: 0px;
+  border-bottom: 1px solid #4f4a41;
 }
 .header_area .navbar .nav .nav-item {
   margin-right: 45px;
@@ -963,7 +964,9 @@ button:focus {
   color: #8a8a8a;
   border: none;
 }
-
+.info_item .lnr {
+  color: #4f4a41;
+}
 .blog-pagination .page-link .lnr {
   font-weight: 600;
 }
@@ -3044,9 +3047,11 @@ h6 {
 .welcome_inner .welcome_img img {
   margin-top: -30px;
 }
-
+.welcome_text a{
+  color: #4f4a41;
+}
 .welcome_text h4 {
-  color: #edfbe5;
+  color: #4f4a41;
   font-family: "Heebo", sans-serif;
   font-size: 36px;
   margin-bottom: 18px;
@@ -3059,21 +3064,21 @@ h6 {
 }
 
 .wel_item {
-  border: 1px solid #edfbe5;
+  border: 1px solid #4f4a41;
   padding: 20px 20px;
   border-radius: 5px;
 }
 .wel_item i {
   font-size: 24px;
-  background: linear-gradient(to right, #88bdbc 0%, #86e7ff 70%);
+  background-color: #4f4a41;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  
 }
 .wel_item h4 {
   font-size: 24px;
   font-family: "Heebo", sans-serif;
   font-weight: bold;
-  color: #edfbe5;
+  color: #4f4a41;
   margin-bottom: 5px;
   margin-top: 10px;
 }
@@ -3098,18 +3103,18 @@ h6 {
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  color: #edfbe5;
+  color: #4f4a41;
   margin-bottom: 15px;
 }
 .tools_expert .skill_main .skill_item .progress_br {
-  border: 1px solid #edfbe5;
+  /* border: 1px solid #edfbe5; */
   padding: 5px;
   border-radius: 10px;
 }
 .tools_expert .skill_main .skill_item .progress {
   height: 10px;
   border-radius: 10px;
-  background: #e8e8e8;
+  background: #edfbe5;
 }
 .tools_expert .skill_main .skill_item .progress .progress-bar {
   width: 0%;
@@ -3326,13 +3331,13 @@ h6 {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   margin-bottom: 20px;
-  color: #edfbe5;
+  color: #4f4a41;
 }
 .personal_text h3 {
   font-size: 48px;
   text-transform: uppercase;
   margin-bottom: 15px;
-  color: #edfbe5;
+  color: #4f4a41;
 }
 .personal_text p {
   font-family: "Roboto", sans-serif;
@@ -3373,7 +3378,7 @@ h6 {
 .personal_text .personal_social li a {
   line-height: 40px;
   width: 40px;
-  background: #e8e8e8;
+  /* background: #4f4a41; */
   border-radius: 5px;
   display: inline-block;
   text-align: center;
@@ -3552,20 +3557,24 @@ h6 {
 /* Footer Area css
 ============================================================================================ */
 .footer_area {
-  background: #000;
+  background: #88bdbc;
+  border-top: 1px solid #4f4a41;
+  margin-top: 3rem;
 }
 
 .f_title {
   margin-bottom: 0.5rem;
 }
 .f_title h3 {
-  color: #edfbe5;
+  color: #4f4a41;
   font-size: 18px;
   font-weight: bold;
   font-family: "Heebo", sans-serif;
   margin-bottom: 0px;
 }
-
+.fa {
+  color: #4f4a41 !important;
+}
 .ab_widget p {
   font-size: 14px;
   line-height: 24px;
@@ -3574,7 +3583,7 @@ h6 {
   margin-bottom: 30px;
 }
 .ab_widget p a {
-  color: #88bdbc;
+  color: #4f4a41;
 }
 .ab_widget p + p {
   margin-bottom: 0px;
