@@ -285,18 +285,7 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/theme.js"></script>
 	<script>
-		$(".skill_main").each(function() {
-        $(this).waypoint(function() {
-            var progressBar = $(".progress-bar");
-            progressBar.each(function(indx){
-                $(this).css("width", $(this).attr("aria-valuenow") + "%")
-            })
-        }, {
-            triggerOnce: true,
-            offset: 'bottom-in-view'
-
-        });
-    });
+		$('.progress-bar').attr('aria-valuenow', newprogress).css('width', newprogress+'%');
 	</script>
 	<!-- <script src="js/stellar.js"></script>
 	<script src="vendors/lightbox/simpleLightbox.min.js"></script>
