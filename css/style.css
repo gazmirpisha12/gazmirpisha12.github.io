@@ -416,6 +416,14 @@ h6 {
   color: #88bdbc;
 }
 
-
+#scrollToTopBtn {
+  background-color: black;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 48px;
+  width: 48px;
+}
 
 /*# sourceMappingURL=style.css.map */
