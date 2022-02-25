@@ -418,7 +418,6 @@ h6 {
 
 #button {
   display: inline-block;
-  background-color: #FF9800;
   width: 50px;
   height: 50px;
   text-align: center;
@@ -439,14 +438,16 @@ h6 {
   font-style: normal;
   font-size: 2em;
   line-height: 50px;
-  color: #fff;
+  color: #4f4a41;
 }
 #button:hover {
   cursor: pointer;
-  background-color: #333;
+  color:#edfbe5 ;
+  background-color: #4f4a41;
 }
 #button:active {
-  background-color: #555;
+  color: #edfbe5;
+  background-color: #4f4a41;
 }
 #button.show {
   opacity: 1;
