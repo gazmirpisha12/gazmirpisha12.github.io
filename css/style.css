@@ -416,32 +416,52 @@ h6 {
   color: #88bdbc;
 }
 
-.scrollToTopBtn {
-  background-color: black;
-  border: none;
-  color: white;
-  cursor: pointer;
-  font-size: 18px;
-  line-height: 48px;
-  width: 48px;
-
-  /* place it at the bottom right corner */
+#button {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  /* keep it at the top of everything else */
-  z-index: 100;
-  /* hide with opacity */
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
   opacity: 1;
-  /* also add a translate effect */
-  transform: translateY(100px);
-  /* and a transition */
-  transition: all 0.5s ease;
+  visibility: visible;
 }
 
-.showBtn {
-  opacity: 1;
-  transform: translateY(0);
+/* Styles for the content section */
+
+
+@media (min-width: 500px) {
+  
+  #button {
+    margin: 30px;
+  }
 }
+
 
 /*# sourceMappingURL=style.css.map */

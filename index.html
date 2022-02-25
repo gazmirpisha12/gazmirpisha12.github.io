@@ -273,7 +273,7 @@
 		<!-- <div class="btn-top">
 			<button id="scrollToTopBtn">☝️</button>
 		</div> -->
-		<button class="scrollToTopBtn">☝️</button>
+		<a id="button"></a>
 		
 	</footer>
 	<!--End Footer-->
@@ -291,6 +291,21 @@
 	<script>
 		const goToTop = ()=> window.scrollTo(0,0);
 		goToTop()
+		var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
 	</script>
 	
 	<!-- <script src="js/stellar.js"></script>
