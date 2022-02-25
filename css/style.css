@@ -442,11 +442,8 @@ h6 {
 }
 #button:hover {
   cursor: pointer;
-  color:#edfbe5 ;
-  background-color: #4f4a41;
 }
 #button:active {
-  color: #edfbe5;
   background-color: #4f4a41;
 }
 #button.show {
