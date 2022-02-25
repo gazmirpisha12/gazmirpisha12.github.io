@@ -273,7 +273,7 @@
 		<!-- <div class="btn-top">
 			<button id="scrollToTopBtn">☝️</button>
 		</div> -->
-		<a id="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top"></a>
+		<a id="button" data-bs-toggle="tooltip" data-bs-placement="left" title="go to top"></a>
 		
 	</footer>
 	<!--End Footer-->
@@ -289,22 +289,20 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/theme.js"></script>
 	<script>
-		const goToTop = ()=> window.scrollTo(0,0);
-		goToTop()
 		var btn = $('#button');
 
-$(window).scroll(function() {
-  if ($(window).scrollTop() > 300) {
-    btn.addClass('show');
-  } else {
-    btn.removeClass('show');
-  }
-});
+		$(window).scroll(function() {
+		if ($(window).scrollTop() > 300) {
+			btn.addClass('show');
+		} else {
+			btn.removeClass('show');
+		}
+		});
 
-btn.on('click', function(e) {
-  e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '300');
-});
+		btn.on('click', function(e) {
+		e.preventDefault();
+		$('html, body').animate({scrollTop:0}, '300');
+		});
 
 	</script>
 	
