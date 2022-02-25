@@ -432,7 +432,7 @@ h6 {
   /* keep it at the top of everything else */
   z-index: 100;
   /* hide with opacity */
-  opacity: 0;
+  opacity: 1;
   /* also add a translate effect */
   transform: translateY(100px);
   /* and a transition */
